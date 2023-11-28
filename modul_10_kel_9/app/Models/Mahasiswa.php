@@ -13,6 +13,7 @@ class Mahasiswa extends Model
      * @var string[]
      */
 
+    //  Muhammad Razzaaq Zulkahfi - 215150700111047
     protected $primaryKey = 'nim';
     public $timestamps = false;
 
@@ -31,17 +32,21 @@ class Mahasiswa extends Model
      *
      * @var string[]
      */
+       //  Muhammad Razzaaq Zulkahfi - 215150700111047
     protected $hidden = [
         'password', 'token'
     ];
 
+       //  Muhammad Razzaaq Zulkahfi - 215150700111047
     public function prodi()
     {
+         //  Muhammad Razzaaq Zulkahfi - 215150700111047
         return $this->belongsTo(Prodi::class, 'prodiId');
     }
 
     public function matakuliah()
     {
+         //  Muhammad Razzaaq Zulkahfi - 215150700111047
         return $this->belongsToMany(MataKuliah::class, 'mahasiswa_matakuliah', 'mhsNim', 'mkId');
     }
 }

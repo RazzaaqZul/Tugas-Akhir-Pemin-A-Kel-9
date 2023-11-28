@@ -26,4 +26,9 @@ class MataKuliah extends Model
      * @var string[]
      */
     protected $hidden = [];
+
+    public function mahasiswas()
+    {
+        return $this->belongsToMany(Mahasiswa::class, 'mahasiswa_matakuliah', 'mkId', 'mhsNim');
+    }
 }
