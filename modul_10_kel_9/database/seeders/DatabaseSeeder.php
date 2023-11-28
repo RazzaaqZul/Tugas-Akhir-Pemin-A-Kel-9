@@ -14,6 +14,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call('UsersTableSeeder');
+        // Adam Daffa Aryoseto Putra - 215150700111007
+        $this->call([
+            ProdiSeeder::class,
+            MataKuliahSeeder::class
+        ]);
     }
 }
