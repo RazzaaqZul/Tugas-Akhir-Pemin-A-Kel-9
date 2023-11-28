@@ -25,4 +25,9 @@ class Prodi extends Model
      */
     protected $hidden = [];
 
+    // Adam Daffa Aryoseto Putra - 215150700111007
+    public function mahasiswas()
+    {
+        return $this->hasMany(Mahasiswa::class, 'prodi_Id');
+    }
 }
