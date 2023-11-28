@@ -1,0 +1,40 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+
+class ProdiSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+
+     // Adam Daffa Aryoseto Putra - 215150700111007
+    public function run(): void
+    {
+      
+        
+        DB::table('prodis')->insert([
+            'nama' => 'Teknologi Informasi',
+        ]);
+
+        DB::table('prodis')->insert([
+            'nama' => 'Sistem Informasi',
+        ]);
+
+        DB::table('prodis')->insert([
+            'nama' => 'Pendidikan Teknologi Informasi',
+        ]);
+
+        DB::table('prodis')->insert([
+            'nama' => 'Teknik Informatika',
+        ]);
+
+        DB::table('prodis')->insert([
+            'nama' => 'Teknik Komputer',
+        ]);
+    }
+}
